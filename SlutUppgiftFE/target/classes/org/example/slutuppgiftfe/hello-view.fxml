@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.slutuppgiftfe.HelloController">
+   <TextField fx:id="textInput" promptText="Enter task name"/>
+   <ListView fx:id="taskListView"/>
+   <HBox spacing="10">
+      <Button fx:id="addButton" text="Add Task" onAction="#handleAddTask"/>
+      <Button fx:id="editButton" text="Edit Task" onAction="#handleEditTask"/>
+      <Button fx:id="deleteButton" text="Delete Task" onAction="#handleDeleteTask"/>
+   </HBox>
+</VBox>
